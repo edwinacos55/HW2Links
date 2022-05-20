@@ -15,7 +15,7 @@ class LinkContainer extends React.Component {
 
   handleRemove = (index) => {
     /*
-            TODO - Create logic for setting the state to filter array and remove favLink at index
+            TO DO - Create logic for setting the state to filter array and remove favLink at index
         */
        const filterArr = this.state.favLinks
        filterArr.splice(index, 1); 
@@ -41,7 +41,7 @@ class LinkContainer extends React.Component {
 
         <h3>Add New</h3>
         {/*TODO - Add Form Component */}
-        <Form addNew= {(favLink) => this.handleSubmit(favLink)}/>
+        <Form newLink= {(favLink) => this.handleSubmit(favLink)}/>
       </div>
     )
   }
